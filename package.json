@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sergioaltuzar/Refactoring/issues"
   },
-  "homepage": "https://github.com/sergioaltuzar/Refactoring#readme"
+  "homepage": "https://github.com/sergioaltuzar/Refactoring#readme",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
 }

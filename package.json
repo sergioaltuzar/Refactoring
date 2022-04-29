@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sergioaltuzar/Refactoring#readme",
   "devDependencies": {
+    "eslint": "^8.14.0",
     "jest": "^28.0.2"
   }
 }

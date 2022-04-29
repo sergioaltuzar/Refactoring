@@ -12,20 +12,20 @@ describe("FizzbuzzService", () => {
         const explorer3 = {name: "Explorer3", score: 3};
         FizzbuzzService.applyValidationInExplorer(explorer3); 
         expect(explorer3.score).toBe(3);
-        expect(explorer3.trick).toBe("FIZ");
+        expect(explorer3.trick).toBe("FIZZ");
     });
 
     test("applyValidationInExplorer explorer 5", () => {
         const explorer5 = {name: "Explorer5", score: 5};
         FizzbuzzService.applyValidationInExplorer(explorer5); 
         expect(explorer5.score).toBe(5);
-        expect(explorer5.trick).toBe("BUZ");
+        expect(explorer5.trick).toBe("BUZZ");
     });
 
     test("applyValidationInExplorer explorer 15", () => {
         const explorer15 = {name: "Explorer15", score: 15};
         FizzbuzzService.applyValidationInExplorer(explorer15); 
         expect(explorer15.score).toBe(15);
-        expect(explorer15.trick).toBe("FIZZBU");
+        expect(explorer15.trick).toBe("FIZZBUZZ");
     });
 });

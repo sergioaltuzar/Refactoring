@@ -6,4 +6,24 @@ describe ("Tests para ExplorerService", () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
         expect(explorersInNode.length).toBe(1);
     });
+    test("Numero de explorer en Node", () => {
+        const explorers = [
+            {
+                mission: "node"
+            }
+        ];
+        const ExplorersWithNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
+        expect(ExplorersWithNode).toBe(1);
+    });
+
+    test("Lista de explorers en Node", () => {
+        const explorers = [
+            {
+                mission: "node",
+                githubUsername: "ajolonauta15"
+            }
+        ];
+        const ExplorersUsernamesWithNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+        expect(ExplorersUsernamesWithNode[0]).toBe("ajolonauta15");
+    });
 });

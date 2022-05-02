@@ -13,14 +13,14 @@ describe ("Tests para ExplorerService", () => {
             }
         ];
         const ExplorersWithNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
-        expect(ExplorersWithNode).toBe(1);
+        expect(ExplorersWithNode).toBe(6);
     });
 
     test("Lista de explorers en Node", () => {
         const explorers = [
             {
                 mission: "node",
-                githubUsername: "ajolonauta15"
+                githubUsername: "ajolonauta6"
             }
         ];
         const ExplorersUsernamesWithNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
